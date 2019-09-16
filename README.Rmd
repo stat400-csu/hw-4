@@ -16,21 +16,12 @@ Be sure to `set.seed(400)` at the beginning of your homework.
     $$
     f(x) = \frac{x}{\sigma^2}e^{-x^2/2\sigma^2}, \qquad x \ge 0, \sigma > 0.
     $$
-    Write an accept-reject algorithm to generate random samples from a Rayleigh$(\sigma)$ distribution. Generate $1000$ samples for several choices of $\sigma > 0$ ($\sigma = 0.5, 1, 3, 10$) and graph the density histogram of each sample with the corresponding Rayleigh density super-imposed for comparison. Check the mode of the generated samples is close to the theoretical mode $\sigma$.
+    Write an accept-reject algorithm to generate random samples from a Rayleigh$(\sigma)$ distribution. Generate $1000$ samples for several choices of $\sigma > 0$ ($\sigma = 1, 2$) and graph the density histogram of each sample with the corresponding Rayleigh density super-imposed for comparison. Check the mode of the generated samples is close to the theoretical mode $\sigma$.
     
 3. A discrete random variable has pmf
-    
+    ```{r, echo = FALSE}
+    knitr::kable(t(data.frame(x = 0:4, f = c(.1, .2, .2, .2, .3))))
     ```
-    ## Warning in kable_markdown(x = structure(c("x", "f", "0.0", "0.1", "1.0", :
-    ## The table should have a header (column names)
-    ```
-    
-    
-    
-    |   |    |    |    |    |    |
-    |:--|---:|---:|---:|---:|---:|
-    |x  | 0.0| 1.0| 2.0| 3.0| 4.0|
-    |f  | 0.1| 0.2| 0.2| 0.2| 0.3|
     Use the inverse transform method to generate a random sample of size $1000$ from the distribution of $X$. Construct a relative frequency table and compare the empirical with the theoretical probabilities. Repeat using the `R` `sample` function.
 
 4. For the accept-reject example (Simulating notes Example 2.1, pg. 7-8) do the following:
