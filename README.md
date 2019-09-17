@@ -1,6 +1,6 @@
 # hw-4
 
-Homework 4 in STAT400 @ CSU
+Homework 4 in STAT400: Computational Statistics @ CSU
 
 ## Assignment
 
@@ -16,7 +16,7 @@ Be sure to `set.seed(400)` at the beginning of your homework.
     $$
     f(x) = \frac{x}{\sigma^2}e^{-x^2/2\sigma^2}, \qquad x \ge 0, \sigma > 0.
     $$
-    Write an accept-reject algorithm to generate random samples from a Rayleigh$(\sigma)$ distribution. Generate $1000$ samples for several choices of $\sigma > 0$ ($\sigma = 0.5, 1, 3, 10$) and graph the density histogram of each sample with the corresponding Rayleigh density super-imposed for comparison. Check the mode of the generated samples is close to the theoretical mode $\sigma$.
+    Write an accept-reject algorithm to generate random samples from a Rayleigh$(\sigma)$ distribution. Generate $1000$ samples for several choices of $\sigma > 0$ ($\sigma = 1, 2$) and graph the density histogram of each sample with the corresponding Rayleigh density super-imposed for comparison. Check the mode of the generated samples is close to the theoretical mode $\sigma$.
     
 3. A discrete random variable has pmf
     
